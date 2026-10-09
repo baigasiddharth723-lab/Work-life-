@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offline OCR</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#2196f3">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <h1>Offline OCR</h1>
+
+        <p id="statusText">Ready</p>
+
+        <!-- Image Select -->
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+        >
+
+        <!-- Image Preview -->
+        <img
+            id="imagePreview"
+            alt="Selected Image"
+            style="display:none;"
+        >
+
+        <!-- OCR Button -->
+        <button id="ocrButton">
+            OCR शुरू करें
+        </button>
+
+        <!-- Result -->
+        <textarea
+            id="resultText"
+            placeholder="निकाला गया text यहाँ दिखाई देगा..."
+            rows="10"
+        ></textarea>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="copyButton">
+                Copy Text
+            </button>
+
+            <button id="clearButton">
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

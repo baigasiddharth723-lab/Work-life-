@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.app {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#statusText {
+    text-align: center;
+    color: #555;
+}
+
+#imageInput {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#imagePreview {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#ocrButton {
+    background: #2196f3;
+    color: white;
+}
+
+#copyButton {
+    background: #4caf50;
+    color: white;
+}
+
+#clearButton {
+    background: #f44336;
+    color: white;
+}
+
+#resultText {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+  }
